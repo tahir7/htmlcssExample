@@ -87,8 +87,8 @@
   .zoom:hover {
     -ms-transform: scale(1.2); /* IE 9 */
     -webkit-transform: scale(1.2); /* Safari 3-8 */
-    transform: scale(1.2); 
-    background-color:rgb(196, 209, 238);
+    transform: scale(1.01); 
+    background-color:rgb(228, 230, 235);
     border-radius: 100%;
 
   }
