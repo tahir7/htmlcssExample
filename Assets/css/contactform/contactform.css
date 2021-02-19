@@ -1,0 +1,23 @@
+.pageFormatting {
+    background: #8dc63f;
+    text-align: center;
+    height: 145px;
+    width: 100%;
+}
+
+.title {
+    color:white;
+    text-align: center;
+    margin-top: 5px;
+    padding: 10px;
+}
+
+.btnfrm {
+    align-items: center;        
+    background-color: orange;    
+}
+
+.bottomText {
+    margin-top: 25px;
+    background: #8dc63f;
+}

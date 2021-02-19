@@ -1,0 +1,33 @@
+/* .navbar.center .navbar-inner {
+    text-align: center;
+    justify-content: center;
+}
+
+.navbar.center .navbar-inner .nav {
+    display:inline-block;
+    float: none;
+} */
+
+
+.navbar-collapse {
+    justify-content: center;
+}
+
+.folioSetting1 {
+
+    height: 250px;
+    width: 180px;
+    background-color: gray;
+    border: 1px solid;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.active {
+    background-color: white;
+    border: 2px solid;
+  }
+
+  .col {
+    max-width: max-content;
+  }

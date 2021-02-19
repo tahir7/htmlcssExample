@@ -1,0 +1,51 @@
+.pcircle {
+    margin-top: 5px;
+    height: 100px;
+    width: 100px;
+    background-color: rgb(221, 216, 216);
+    border: 0px solid;
+    border-radius: 100%;
+}
+
+ .faPositionPeople {
+    color:rgb(110, 110, 108); 
+    margin-top: 21px;
+    margin-left: 26px;
+}
+
+.tdStyle {
+    padding: 15px;
+}
+
+.borderBottom {
+    border-bottom: 1px gray solid;
+}
+
+.borderRight {
+    border-right: 1px gray solid;
+}
+
+.colColor
+{
+    background-color: rgb(238, 234, 234);
+}
+
+.reviewRow {
+    background-color: rgb(240, 235, 235);
+    /* display: table-cell; */
+    /* padding:20px;  */
+    /* width: 100%;  */
+    /* padding:20px;  */
+}
+
+reviewStyle {
+    margin-left: 1px;
+    padding: 2px;
+
+}
+
+.iconStylePeople {
+    color:rgb(139, 146, 238); 
+    margin-left: 5px;
+    margin-top: -2px;
+}

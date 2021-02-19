@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+<head>
+ 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+       
+  <link rel="stylesheet" href="/Final_Assignment_of_CSS/Assets/css/slideBar/slideBar.css">
+        
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" />
+   
+  <link rel="stylesheet" href="./Assets/css/features/features.css">
+
+  <link rel='stylesheet' href='/Final_Assignment_of_CSS/Assets/css/portfolio/portfolio.css'>
+  <link rel='stylesheet' href='/Final_Assignment_of_CSS/Assets/css/peopleAboutUs/people.css'>
+  <link rel='stylesheet' href='/Final_Assignment_of_CSS/Assets/css/skillsColorCircles/skillColor.css'>
+  <link rel='stylesheet' href='/Final_Assignment_of_CSS/Assets/css/contactform/contactform.css'>
+  <link rel="stylesheet" href="/Final_Assignment_of_CSS/Assets/css/contactMap/contactMap.css" >
+     
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+  <script src="/Final_Assignment_of_CSS/components/portfolio/portfolio.js" type="text/javascript"></script>
+  <link rel="stylesheet" href='/Final_Assignment_of_CSS/Assets/css/bottombar/bottombar.css'>
+
+  <link rel='stylesheet' href='/Final_Assignment_of_CSS/Assets/css/cardsPackage/cardsPackage.css' >
+
+
+<script>
+function includeHTML() {
+  var z, i, elmnt, file, xhttp;
+  /*loop through a collection of all HTML elements:*/
+  z = document.getElementsByTagName("*");
+
+  
+  for (i = 0; i < z.length; i++) {
+    elmnt = z[i];
+    /*search for elements with a certain atrribute:*/
+    file = elmnt.getAttribute("w3-include-html");
+    if (file) {
+      /*make an HTTP request using the attribute value as the file name:*/
+      xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4) {
+          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+          /*remove the attribute, and call this function once more:*/
+          elmnt.removeAttribute("w3-include-html");
+          includeHTML();
+        }
+      }      
+      xhttp.open("GET", file, true);
+      xhttp.send();
+      /*exit the function:*/
+      return;
+    }
+  }
+};
+</script>
+
+
+</head>
+
+<body>
+<div class="container">
+    <div w3-include-html="./components/topbar/topbar.html"></div> 
+    <div w3-include-html="./components/menubar/menubar.html"></div> 
+  <!-- 
+    <div w3-include-html="./components/slideBar/slideBarBS.html"></div>  -->
+    
+
+     
+  <!-- Slick slider -->
+    <div class="container">        
+      <div class="row responsive ">
+              <div class='col-md-12 '>                
+              
+                <!-- <div class='col'>   -->
+
+                  <div class="details align-middle align-text-center">
+                    <h2> We are Experts </h2>
+                    <p> Dummy Text fkjls jhklh dskjfhsdkjfh sdkjfh sdkjfh </p>    
+                    <!-- <form class="d-flex"> -->
+                      <p><button class="btn btn btn-primary btn-sm" type="submit">Read More</button> </p>
+                    <!-- </form> -->
+                </div>
+            </div>
+
+            <div class='col-md-12'>
+              <!-- <div class='col '> -->
+                <div class="details">
+                    <h2> We are Experts </h2>
+                    <p> Dummy Text fkjls jhklh dskjfhsdkjfh sdkjfh aaaaaaaaaa</p>    
+                    <p><button class="btn btn btn-primary btn-sm" type="submit">Read More</button> </p>
+                </div>
+            </div>
+              </div>
+            </div>
+      </div>
+<!-- Slick slider -->
+
+
+<div w3-include-html='./components/features/featuresPart.html'></div>
+<div w3-include-html='./components/about/aboutInfo.html'></div> 
+
+<div w3-include-html='./components/services/servicesdetail.html'></div>
+
+<!-- <div w3-include-html='./components/portfolio/portfoliodetails.html'></div> -->
+
+<!-- Portfolio Gallery HTML Start  -->
+<div class="container">
+
+  <div style="background-color: black; color: white; margin-top: 15px;">
+    <div class="justify-content-center" style="text-align: center;">
+         <h2> Our Portfolio </h2>
+         <p> jdkjl j hjkhk hkj hkjh jh hjk hkjh jh jhkjh kjh kjh</p>
+    </div>
+
+        
+
+    <div style="background-color: black; text-align: center;">
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+           
+          <!-- <div class="collapse navbar-collapse justify-content-center text-align-center" > -->
+                
+            <div class="navbar-collapse justify-content-center text-align-center" >
+              
+              <ul class="navbar-nav" >
+                <li class="nav-item active" data-filter='all'>
+                  <a class="nav-link"  href="#">All </a>
+                </li>
+                <li class="nav-item" data-filter='webDesign'>
+                  <a class="nav-link"  href="#">Web Design </a>
+                </li>
+                <li class="nav-item" data-filter='graphicsDesign'>
+                  <a class="nav-link"  href="#">Graphics Design</a>
+                </li>
+                <li class="nav-item" data-filter='branding'>
+                  <a class="nav-link"  href="#">Branding</a>
+                </li>
+                
+                <li class="nav-item" data-filter='logo'>
+                    <a class="nav-link"  href="#">Logo</a>
+                </li>
+
+                <li class="nav-item"  data-filter='maketing'>
+                     <a class="nav-link" href="#">Marketing</a>
+                </li>
+
+                <li class="nav-item"  data-filter='advertisement'>
+                     <a class="nav-link" href="#">Advertisement</a>
+                </li>                      
+              </ul>
+            </div>
+          </nav>  
+     </div>
+
+     <div  style="background-color: black; color: white;">
+      
+        <div class="row">
+
+            <div class="col filter webDesign" >
+              <div class="text-center folioSetting1">
+                <a href='#'>
+                   <img src="/Final_Assignment_of_CSS/Assets/images/logos/l1.png" class="rounded" alt="..." height="250px" width="150px">
+                </a>
+              </div>
+            </div>
+            <div class="col filter graphicsDesign">
+              <div class="text-center folioSetting1">
+                <a href='#'>
+                 <img src="/Final_Assignment_of_CSS/Assets/images/logos/l2.png" class="rounded" alt="..."  height="250px" width="150px">
+                </a>  
+              </div>
+            </div>
+            <div class="col filter webDesign">
+              <div class="text-center folioSetting1">
+                <a href='#'>
+                <img src="/Final_Assignment_of_CSS/Assets/images/logos/l1.png" class="rounded" alt="..."  height="250px" width="150px">
+              </a>
+              </div>
+            </div>
+            <div class="col filter graphicsDesign">
+              <div class="text-center folioSetting1">
+                <a href='#'>
+                     <img src="/Final_Assignment_of_CSS/Assets/images/logos/l2.png" class="rounded" alt="..."  height="250px" width="150px">
+                </a>  
+                </div>
+            </div>
+            <div class="col filter branding">
+              <div class="text-center folioSetting1">
+                <a href='#'>
+                    <img src="/Final_Assignment_of_CSS/Assets/images/logos/l5.png" class="rounded" alt="..."  height="250px" width="150px">
+                </a>
+              </div>
+            </div>
+        <!-- </div> -->
+        <!-- <div class="row"> -->
+            <div class="col filter branding">
+              <div class="text-center folioSetting1">
+                <a href='#'>
+                   <img src="/Final_Assignment_of_CSS/Assets/images/logos/l5.png" class="rounded" alt="..." height="250px" width="150px">
+                </a>
+              </div>
+            </div>
+            <div class="col filter logo">
+              <div class="text-center folioSetting1">
+                <a href='#'>
+                 <img src="/Final_Assignment_of_CSS/Assets/images/logos/l3.png" class="rounded" alt="..."  height="250px" width="150px">
+                </a>  
+              </div>
+            </div>
+            <div class="col filter maketing">
+              <div class="text-center folioSetting1">
+                <a href='#'>
+                <img src="/Final_Assignment_of_CSS/Assets/images/logos/l4.png" class="rounded" alt="..."  height="250px" width="150px">
+              </a>
+              </div>
+            </div>
+            <div class="col filter maketing">
+              <div class="text-center folioSetting1">
+                <a href='#'>
+                     <img src="/Final_Assignment_of_CSS/Assets/images/logos/l4.png" class="rounded" alt="..."  height="250px" width="150px">
+                </a>  
+                </div>
+            </div>
+            <div class="col filter advertisement">
+              <div class="text-center folioSetting1">
+                <a href='#'>
+                    <!-- <img src="/Final_Assignment_of_CSS/Assets/images/logos/l11.png" class="rounded" alt="..."  height="250px" width="150px"> -->
+                    
+                 </a>
+              </div>
+            </div>
+        </div>
+    
+    
+    </div>
+
+
+
+
+
+  </div>
+</div>
+
+<!-- Portfolio Gallery HTML End  -->
+
+<div w3-include-html="./components/ourProcess/ourProcess.html"></div> 
+<div w3-include-html='./components/peopleAboutus/people.html'></div>
+<div w3-include-html='./components/skillsColorCircles/skillsCircle.html'></div>
+<div w3-include-html='./components/contactform/contactform.html'></div>
+<div w3-include-html='./components/contactMap/contactmap.html'></div>
+
+<div w3-include-html='./components/cardsPackage/cardsPackage.html'></div>
+
+<div w3-include-html='./components/bottomBar/bottombar.html'></div>
+
+
+
+</div>
+
+
+<!-- Slick slider -->
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous"></script>
+  
+<script>
+includeHTML();
+</script>
+
+<script >
+       
+  $('.responsive').slick({
+       dots: true,
+       infinite: false,
+       speed: 300,
+       slidesToShow: 1,
+       slidesToScroll: 1,
+       responsive: [
+           {
+           breakpoint: 1024,
+           settings: {
+               slidesToShow: 1,
+               slidesToScroll: 1,
+               infinite: true,
+               dots: true
+           }
+           },
+          //  {
+          //  breakpoint: 900,
+          //  settings: {
+          //      slidesToShow: 1,
+          //      slidesToScroll: 1
+          //  }
+          //  },
+          //  {
+          //  breakpoint: 800,
+          //  settings: {
+          //      slidesToShow: 1,
+          //      slidesToScroll: 1
+          //  }
+          //  },
+           {
+           breakpoint: 600,
+           settings: {
+               slidesToShow: 1,
+               slidesToScroll: 1
+           }
+           },
+           {
+           breakpoint: 480,
+           settings: {
+               slidesToShow: 1,
+               slidesToScroll: 1
+           }
+           }
+           // You can unslick at a given breakpoint now by adding:
+           // settings: "unslick"
+           // instead of a settings object
+       ]
+       });
+</script>
+<!-- Slick slider -->
+
+</body>
+</html>
